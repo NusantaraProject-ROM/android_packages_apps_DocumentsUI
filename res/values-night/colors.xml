@@ -14,12 +14,12 @@
      limitations under the License.
 -->
 <resources>
-    <color name="app_background_color">#202124</color>
-    <color name="background_floating">#3C4043</color>
+    <color name="app_background_color">@*android:color/notification_material_background_color</color>
+    <color name="background_floating">@*android:color/notification_material_background_color</color>
     <color name="nav_bar_translucent">#52000000</color>
 
-    <color name="primary">#8AB4F8</color>
-    <color name="secondary">#3D8AB4F8</color>
+    <color name="primary">@*android:color/accent_device_default_light</color> <!-- Blue 600 -->
+    <color name="secondary">#50747474</color> <!-- Blue 50 -->
     <color name="hairline">#5F6368</color>
 
     <color name="briefcase_icon_color">#669DF6</color> <!-- Blue 400 -->
