@@ -52,10 +52,18 @@ public class DocumentsSwipeRefreshLayout extends SwipeRefreshLayout {
         }
         a.recycle();
         setColorSchemeResources(colorId);
+        setProgressBackgroundColorSchemeColor(getBackground(getContext()));
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent e) {
         return false;
+    }
+
+    public static int getBackground(Context context) {
+        TypedArray array = context.obtainStyledAttributes(new int[]{android.R.attr.colorBackgroundFloating});
+        int color = array.getColor(0, 0);
+        array.recycle();
+        return color;
     }
 }
